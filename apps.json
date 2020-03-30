@@ -1,0 +1,50 @@
+[
+  {
+    "id": "com.eaststudios.maastokartat",
+    "itunes_id": 929001708,
+    "name": {
+      "en": "Topo Maps",
+      "fi": "Maastokartat"
+    },
+    "platform": "appstore",
+    "domains": [
+      {
+        "domain": "topomaps.app"
+      }
+    ],
+    "technologies": {
+      "app": "swift",
+      "backend": ["php", "aws"]
+    }
+  },
+  {
+    "id": "com.eaststudios.birdguide",
+    "itunes_id": 1151714444
+    "name": {
+      "fi": "Suomen linnut"
+    },
+    "platform": "appstore",
+    "domains": [
+      {
+        "domain": "suomen-linnut.fi"
+      }
+    ],
+    "technologies": {
+      "app": "swift",
+      "backend": ["php", "aws"]
+    }
+  },
+  {
+    "id": "com.eaststudios.roadcameras",
+    "itunes_id": 1485143944
+    "name": {
+      "fi": "Tiekamerat"
+    },
+    "platform": "appstore",
+    "domains": [],
+    "technologies": {
+      "app": "swift",
+      "backend": ["php"]
+    }
+  }
+]
