@@ -1,0 +1,43 @@
+[{
+        "domain": "kulpakko.com",
+        "registrar": "cloudflare",
+        "host": "raspi",
+        "description": "Personal website and staging environment"
+    },
+    {
+        "domain": "eaststudios.net",
+        "registrar": "cloudflare",
+        "host": "digitalocean",
+        "description": "East Studios website and some legacy apis"
+    },
+    {
+        "domain": "eaststudios.fi",
+        "registrar": "route53",
+        "host": "digitalocean",
+        "description": "East Studios website"
+    },
+    {
+        "domain": "topomaps.app",
+        "registrar": "namecheap",
+        "host": "digitalocean",
+        "description": "Topo Maps website (and api at api.topomaps.app). Website is hosted in gh pages. Some other subdomains for map tiles etc in s3."
+    },
+    {
+        "domain": "oliverkulpakko.fi",
+        "registrar": "route53",
+        "host": "s3",
+        "description": "Backup for personal website, 1000% uptime..."
+    },
+    {
+        "domain": "suomen-linnut.fi",
+        "registrar": "route53",
+        "host": "digitalocean",
+        "description": "Bird Guide website (api at api.suomen-linnut.fi). images subdomain is serving images from cloudfront/s3."
+    },
+    {
+        "domain": "nature-app.com",
+        "registrar": "route53",
+        "host": "s3",
+        "description": "Nature app website. Assets subdomain is serving assets from cloudfront/s3."
+    }
+]
