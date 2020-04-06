@@ -1,112 +1,111 @@
-[
-  {
-    "id": "atms-legacy",
-    "base_url": "https://eaststudios.net/api/ATMs",
-    "description": "Out-of-date APIs for ATM Finder app, before version 5.0. App versions 5.0-> get the data straight from the source so this proxy api isn't needed anymore.",
-    "status": "on",
-    "criticality": 4,
-    "retirement_schedule": {
-      "date": "2020-06-01T00:00:00+00:00",
-      "is_strict": false,
-      "description": "This api is no longer being used in any applications"
+[{
+        "id": "atms-legacy",
+        "base_url": "https://eaststudios.net/api/ATMs",
+        "description": "Out-of-date APIs for ATM Finder app, before version 5.0. App versions 5.0-> get the data straight from the source so this proxy api isn't needed anymore.",
+        "status": "on",
+        "criticality": 4,
+        "retirement_schedule": {
+            "date": "2020-06-01T00:00:00+00:00",
+            "is_strict": false,
+            "description": "This api is no longer being used in any applications"
+        },
+        "source_control_url": null
     },
-    "source_control_url": null
-  },
-  {
-    "id": "birdguide-oldurl",
-    "base_url": "https://eaststudios.net/api/birdguide",
-    "description": "Old API URL, it was changed to \"birdguide\" on iOS update 2.1.",
-    "status": "on",
-    "criticality": 3,
-    "retirement_schedule": {
-      "date": "2020-06-01T00:00:00+00:00",
-      "is_strict": false,
-      "description": "This api is no longer being used by any current applications since mar 29 2020."
+    {
+        "id": "birdguide-oldurl",
+        "base_url": "https://eaststudios.net/api/birdguide",
+        "description": "Old API URL, it was changed to \"birdguide\" on iOS update 2.1.",
+        "status": "on",
+        "criticality": 3,
+        "retirement_schedule": {
+            "date": "2020-06-01T00:00:00+00:00",
+            "is_strict": false,
+            "description": "This api is no longer being used by any current applications since mar 29 2020."
+        },
+        "source_control_url": "https://github.com/oliverkulpakko/birdguide-api.git"
     },
-    "source_control_url": "https://github.com/oliverkulpakko/birdguide-api.git"
-  },
-  {
-    "id": "nature",
-    "base_url": "https://eaststudios.net/api/nature",
-    "description": "API For iOS App \"Nature\".",
-    "status": "on",
-    "criticality": 3,
-    "retirement_schedule": null,
-    "source_control_url": "https://github.com/oliverkulpakko/Nature-API.git"
-  },
-  {
-    "id": "roadcameras",
-    "base_url": "https://eaststudios.net/api/roadcameras",
-    "description": "API For iOS App \"Road Cameras\".",
-    "status": "on",
-    "criticality": 3,
-    "retirement_schedule": null,
-    "source_control_url": "https://github.com/oliverkulpakko/RoadCameras-api.git"
-  },
-  {
-    "id": "topomaps-v1-legacy",
-    "base_url": "https://eaststudios.net/api/TopoMaps",
-    "description": "Super-old legacy api for topo maps. Originally created in early 2017. No connections to the main db anymore, map type requests are proxied from topomaps3 api.",
-    "status": "on",
-    "criticality": 3,
-    "retirement_schedule": {
-      "date": "2020-06-01T00:00:00+00:00",
-      "is_strict": false,
-      "description": "This api is not used by any current applications, however some features in nautical charts app call this api. Will have to update nautical charts app to match TopoMaps6 before phasing out..."
+    {
+        "id": "nature",
+        "base_url": "https://eaststudios.net/api/nature",
+        "description": "API For iOS App \"Nature\".",
+        "status": "on",
+        "criticality": 3,
+        "retirement_schedule": null,
+        "source_control_url": "https://github.com/oliverkulpakko/Nature-API.git"
     },
-    "source_control_url": "https://github.com/oliverkulpakko/Topo-maps-API.git"
-  },
-  {
-    "id": "topomaps-v2-legacy",
-    "base_url": "https://eaststudios.net/api/TopoMapsV2",
-    "description": "Old legacy api for topo maps. Originally created in late 2017. No connections to the main db anymore, map type requests are proxied from topomaps3 api. Nautical Charts apps relies heavily on these apis (on version 5.x).",
-    "status": "on",
-    "criticality": 3,
-    "retirement_schedule": {
-      "date": "2020-06-01T00:00:00+00:00",
-      "is_strict": false,
-      "description": "This api is a must-have for nautical charts. Must update to match TopoMaps6 before phasing out!"
+    {
+        "id": "roadcameras",
+        "base_url": "https://roadcameras-api.eaststudios.net",
+        "description": "API For iOS App \"Road Cameras\".",
+        "status": "on",
+        "criticality": 3,
+        "retirement_schedule": null,
+        "source_control_url": "https://github.com/oliverkulpakko/RoadCameras-api.git"
     },
-    "source_control_url": "https://github.com/oliverkulpakko/TopoMaps-API.git"
-  },
-  {
-    "id": "topomaps-v3-oldurl",
-    "base_url": "https://eaststudios.net/api/topomaps3",
-    "description": "Current api for topo maps, created in fall 2019. However, this endpoint is at the old url.",
-    "status": "on",
-    "criticality": 3,
-    "retirement_schedule": {
-      "date": "2020-05-01T00:00:00+00:00",
-      "is_strict": false,
-      "description": "The app automatically updates the base url, so all users should already be using the latest api url. The GET / has to be running, as it returns the new url."
+    {
+        "id": "topomaps-v1-legacy",
+        "base_url": "https://eaststudios.net/api/TopoMaps",
+        "description": "Super-old legacy api for topo maps. Originally created in early 2017. No connections to the main db anymore, map type requests are proxied from topomaps3 api.",
+        "status": "on",
+        "criticality": 3,
+        "retirement_schedule": {
+            "date": "2020-06-01T00:00:00+00:00",
+            "is_strict": false,
+            "description": "This api is not used by any current applications, however some features in nautical charts app call this api. Will have to update nautical charts app to match TopoMaps6 before phasing out..."
+        },
+        "source_control_url": "https://github.com/oliverkulpakko/Topo-maps-API.git"
     },
-    "source_control_url": "https://github.com/oliverkulpakko/api.topomaps.co.git"
-  },
-  {
-    "id": "topomaps-v3",
-    "base_url": "https://api.topomaps.app",
-    "description": "Current api for topo maps, created in fall 2019. All versions 6.0-> rely on this endpoint.",
-    "status": "on",
-    "criticality": 1,
-    "retirement_schedule": null,
-    "source_control_url": "https://github.com/oliverkulpakko/api.topomaps.co.git"
-  },
-  {
-    "id": "birdguide",
-    "base_url": "https://api.suomen-linnut.fi",
-    "description": "Current api for Bird Guide. Created in early 2020.",
-    "status": "on",
-    "criticality": 2,
-    "retirement_schedule": null,
-    "source_control_url": "https://github.com/oliverkulpakko/birdguide-api.git"
-  },
-  {
-    "id": "appmanager",
-    "base_url": "https://eaststudios.net/api/appmanager",
-    "description": "Current api for app manager. Created in late 2019/early 2020.",
-    "status": "on",
-    "criticality": 2,
-    "retirement_schedule": null,
-    "source_control_url": "https://github.com/oliverkulpakko/appmanager-api.git"
-  }
+    {
+        "id": "topomaps-v2-legacy",
+        "base_url": "https://eaststudios.net/api/TopoMapsV2",
+        "description": "Old legacy api for topo maps. Originally created in late 2017. No connections to the main db anymore, map type requests are proxied from topomaps3 api. Nautical Charts apps relies heavily on these apis (on version 5.x).",
+        "status": "on",
+        "criticality": 3,
+        "retirement_schedule": {
+            "date": "2020-06-01T00:00:00+00:00",
+            "is_strict": false,
+            "description": "This api is a must-have for nautical charts. Must update to match TopoMaps6 before phasing out!"
+        },
+        "source_control_url": "https://github.com/oliverkulpakko/TopoMaps-API.git"
+    },
+    {
+        "id": "topomaps-v3-oldurl",
+        "base_url": "https://eaststudios.net/api/topomaps3",
+        "description": "Current api for topo maps, created in fall 2019. However, this endpoint is at the old url.",
+        "status": "on",
+        "criticality": 3,
+        "retirement_schedule": {
+            "date": "2020-05-01T00:00:00+00:00",
+            "is_strict": false,
+            "description": "The app automatically updates the base url, so all users should already be using the latest api url. The GET / has to be running, as it returns the new url."
+        },
+        "source_control_url": "https://github.com/oliverkulpakko/api.topomaps.co.git"
+    },
+    {
+        "id": "topomaps-v3",
+        "base_url": "https://api.topomaps.app",
+        "description": "Current api for topo maps, created in fall 2019. All versions 6.0-> rely on this endpoint.",
+        "status": "on",
+        "criticality": 1,
+        "retirement_schedule": null,
+        "source_control_url": "https://github.com/oliverkulpakko/api.topomaps.co.git"
+    },
+    {
+        "id": "birdguide",
+        "base_url": "https://api.suomen-linnut.fi",
+        "description": "Current api for Bird Guide. Created in early 2020.",
+        "status": "on",
+        "criticality": 2,
+        "retirement_schedule": null,
+        "source_control_url": "https://github.com/oliverkulpakko/birdguide-api.git"
+    },
+    {
+        "id": "appmanager",
+        "base_url": "https://ama.eaststudios.net",
+        "description": "Current api for app manager. Created in late 2019/early 2020.",
+        "status": "on",
+        "criticality": 2,
+        "retirement_schedule": null,
+        "source_control_url": "https://github.com/oliverkulpakko/appmanager-api.git"
+    }
 ]
