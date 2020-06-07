@@ -2,42 +2,80 @@
         "domain": "kulpakko.com",
         "registrar": "cloudflare",
         "host": "raspi",
-        "description": "Personal website and staging environment"
+        "description": "Personal website and staging environment",
+        "subdomains": [{
+            "domain": "apps.kulpakko.com",
+            "description": "Info api for my apps",
+            "host": "gh-pages"
+        }]
     },
     {
         "domain": "eaststudios.net",
         "registrar": "cloudflare",
         "host": "digitalocean",
-        "description": "East Studios website and some legacy apis"
+        "description": "East Studios website and some legacy apis",
+        "subdomains": [{
+                "domain": "roadcameras-api.eaststudios.net",
+                "description": "API for Road Cameras app",
+                "host": "digitalocean"
+            },
+            {
+                "domain": "ama.eaststudios.net",
+                "description": "API for App Manager",
+                "host": "digitalocean"
+            },
+            {
+                "domain": "maps.eaststudios.net",
+                "description": "MapProxy",
+                "host": "kimsufi"
+            }
+        ]
     },
     {
         "domain": "eaststudios.fi",
         "registrar": "route53",
         "host": "digitalocean",
-        "description": "East Studios website"
+        "description": "East Studios website",
+        "subdomains": []
     },
     {
         "domain": "topomaps.app",
         "registrar": "namecheap",
         "host": "digitalocean",
-        "description": "Topo Maps website (and api at api.topomaps.app). Website is hosted in gh pages. Some other subdomains for map tiles etc in s3."
+        "description": "Topo Maps website (and api at api.topomaps.app). Website is hosted in gh pages. Some other subdomains for map tiles etc in s3.",
+        "subdomains": [{
+                "domain": "api.topomaps.app",
+                "description": "API for Topo Maps app",
+                "host": "digitalocean"
+            },
+            {
+                "domain": "nautical-api.topomaps.app",
+                "description": "API for Nautical Charts app",
+                "host": "digitalocean"
+            },
+            {
+                "domain": "static.topomaps.app",
+                "description": "Some static assets",
+                "host": "cloudfront-s3"
+            }
+        ]
     },
     {
         "domain": "oliverkulpakko.fi",
         "registrar": "route53",
         "host": "s3",
-        "description": "Backup for personal website, 1000% uptime..."
+        "description": "Backup for personal website, 1000% uptime...",
+        "subdomains": []
     },
     {
         "domain": "suomen-linnut.fi",
         "registrar": "route53",
         "host": "digitalocean",
-        "description": "Bird Guide website (api at api.suomen-linnut.fi). images subdomain is serving images from cloudfront/s3."
-    },
-    {
-        "domain": "nature-app.com",
-        "registrar": "route53",
-        "host": "s3",
-        "description": "Nature app website. Assets subdomain is serving assets from cloudfront/s3."
+        "description": "Bird Guide website (api at api.suomen-linnut.fi). images subdomain is serving images from cloudfront/s3.",
+        "subdomains": [{
+            "domain": "api.suomen-linnut.fi",
+            "description": "API for Bird Guide app",
+            "host": "digitalocean"
+        }]
     }
 ]
